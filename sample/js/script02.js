@@ -5,10 +5,29 @@ $(function(){
   $("#button00").on("click",function(){
     console.log(students)
   })
+
   
+  $("#button01").on("click",function(){
+    let students_txt = "";
 
+    for(let i=0; i<students.lingth; i++){
+      students_txt += students[i]
+      students_txt += "/"
+    }
 
+    $("#content").text(students_txt);
+  })
 
+  $("#button01").on("click",function(){
+    let students_txt = "";
+
+    for(let i=0; i<students.lingth; i++){
+      students_txt += "<div id='students" + i +"' class='student'>" + students[i] +
+      "</div>"
+    }
+
+    $("#content").html(students_txt);
+  })
 
 
 })

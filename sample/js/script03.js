@@ -16,7 +16,6 @@ $(function(){
     $("#content").text(students[0].name + ':' + students[0].sport)
 })
 
-
   $("#button02").on("click",function(){
     let students_txt = "";
 

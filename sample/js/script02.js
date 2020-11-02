@@ -10,7 +10,7 @@ $(function(){
   $("#button01").on("click",function(){
     let students_txt = "";
 
-    for(let i=0; i<students.lingth; i++){
+    for(let i=0; i<students.length; i++){
       students_txt += students[i]
       students_txt += "/"
     }
@@ -18,10 +18,10 @@ $(function(){
     $("#content").text(students_txt);
   })
 
-  $("#button01").on("click",function(){
+  $("#button02").on("click",function(){
     let students_txt = "";
 
-    for(let i=0; i<students.lingth; i++){
+    for(let i=0; i<students.length; i++){
       students_txt += "<div id='students" + i +"' class='student'>" + students[i] +
       "</div>"
     }
